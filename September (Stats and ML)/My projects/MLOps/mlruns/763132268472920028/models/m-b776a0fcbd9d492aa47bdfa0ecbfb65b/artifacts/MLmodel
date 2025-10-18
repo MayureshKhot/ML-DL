@@ -1,0 +1,22 @@
+artifact_path: file:///d:/NareshIT_PrakashSenapati/Prakash%20Sir-Notes/September%20%28Stats%20and%20ML%29/My%20projects/MLOps/mlruns/763132268472920028/models/m-b776a0fcbd9d492aa47bdfa0ecbfb65b/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.1
+mlflow_version: 3.4.0
+model_id: m-b776a0fcbd9d492aa47bdfa0ecbfb65b
+model_size_bytes: 39037
+model_uuid: m-b776a0fcbd9d492aa47bdfa0ecbfb65b
+prompts: null
+run_id: 5241b2f3623e4bf0a13f82267239bbd7
+utc_time_created: '2025-09-26 06:48:03.833413'

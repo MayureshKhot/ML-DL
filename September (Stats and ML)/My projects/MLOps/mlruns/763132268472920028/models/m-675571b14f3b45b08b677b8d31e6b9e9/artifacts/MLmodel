@@ -1,0 +1,22 @@
+artifact_path: file:///d:/NareshIT_PrakashSenapati/Prakash%20Sir-Notes/September%20%28Stats%20and%20ML%29/My%20projects/MLOps/mlruns/763132268472920028/models/m-675571b14f3b45b08b677b8d31e6b9e9/artifacts
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.3
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: xgb
+    xgb_version: 2.1.1
+mlflow_version: 3.4.0
+model_id: m-675571b14f3b45b08b677b8d31e6b9e9
+model_size_bytes: 104744
+model_uuid: m-675571b14f3b45b08b677b8d31e6b9e9
+prompts: null
+run_id: 1f17028e551846aab9a11139bfad5caf
+utc_time_created: '2025-09-26 06:48:17.220481'

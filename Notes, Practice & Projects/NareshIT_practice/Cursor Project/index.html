@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Airplane Simulation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #87CEEB, #98FB98);
+            font-family: Arial, sans-serif;
+        }
+        
+        #gameContainer {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        #ui {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            z-index: 100;
+        }
+        
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            z-index: 100;
+        }
+        
+        #speedometer {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            z-index: 100;
+        }
+        
+        .control-key {
+            background: rgba(0,0,0,0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 2px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="ui">
+            <h2>3D Airplane Simulation</h2>
+            <div>Altitude: <span id="altitude">0</span> m</div>
+            <div>Speed: <span id="speed">0</span> km/h</div>
+        </div>
+        
+        <div id="speedometer">
+            <div style="font-size: 24px; font-weight: bold;">Speedometer</div>
+            <div style="font-size: 18px;">Speed: <span id="speedValue">0</span> km/h</div>
+            <div style="font-size: 18px;">Altitude: <span id="altitudeValue">0</span> m</div>
+        </div>
+        
+        <div id="controls">
+            <h3>Controls:</h3>
+            <div><span class="control-key">W/S</span> Pitch Up/Down</div>
+            <div><span class="control-key">A/D</span> Roll Left/Right</div>
+            <div><span class="control-key">Q/E</span> Yaw Left/Right</div>
+            <div><span class="control-key">↑/↓</span> Throttle Up/Down</div>
+            <div><span class="control-key">Space</span> Reset Position</div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html> 

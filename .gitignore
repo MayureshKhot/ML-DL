@@ -1,0 +1,38 @@
+# Ignore all data folders
+data/
+datasets/
+images/
+img/
+raw_data/
+external_data/
+
+# Ignore typical dataset file formats
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.zip
+*.tar
+*.gz
+*.rar
+
+# Ignore common image types
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.tiff
+*.svg
+*.webp
+
+# Ignore annotation files if present
+*.xml
+*.yaml
+*.txt
+
+# Ignore any cached or generated files
+__pycache__/
+*.log
+*.tmp
